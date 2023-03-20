@@ -1,5 +1,5 @@
 import Navbar from "../../assets/Navbar"
-import Hero from "./Hero"
+import ApplyHero from "./ApplyHero"
 import Form from "./Form"
 import Footer from "../../assets/Footer"
 
@@ -7,7 +7,7 @@ export default function Apply() {
     return(
         <div>
             <Navbar/>
-            <Hero/>
+            <ApplyHero/>
             <Form/>
             <Footer/>
         </div>

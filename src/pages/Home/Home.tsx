@@ -1,5 +1,5 @@
 import Navbar from "../../assets/Navbar"
-import Hero from "./Hero"
+import HomeHero from "./HomeHero"
 import WhyUs from "./WhyUs"
 import OurService from "./OurService"
 import ContactUs from "./ContactUs"
@@ -9,7 +9,7 @@ export default function Home() {
     return(
         <div>
             <Navbar/>
-            <Hero/>
+            <HomeHero/>
             <WhyUs/>
             <OurService/>
             <ContactUs/>

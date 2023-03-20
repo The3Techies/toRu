@@ -1,5 +1,5 @@
 import Navbar from "../../assets/Navbar"
-import Hero from "./Hero"
+import WhyRussiaHero from "./WhyRussiaHero"
 import Benefits from "./Benefits"
 import StudenJobs from "./StudenJobs"
 import StudentLife from "./StudentLife"
@@ -9,7 +9,7 @@ export default function WhyRussia() {
     return(
         <div>
             <Navbar/>
-            <Hero/>
+            <WhyRussiaHero/>
             <Benefits/>
             <StudenJobs/>
             <StudentLife/>
