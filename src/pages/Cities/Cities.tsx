@@ -1,7 +1,7 @@
-import Navbar from "../../assets/Navbar"
+import Navbar from "../../Components/Navbar"
 import CitiesHero from "./CitiesHero"
 import CitiesCards from "./CitiesCards"
-import Footer from "../../assets/Footer"
+import Footer from "../../Components/Footer"
 
 export default function Cities() {
     return(

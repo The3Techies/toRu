@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Home from './pages/Home/Home';
-import WhyRussia from "./pages/Why Russia/WhyRussia";
+import WhyRussia from "./pages/WhyRussia/WhyRussia";
 import Apply from "./pages/Apply/Apply";
 import Cities from "./pages/Cities/Cities";
 import City from "./pages/City/City";

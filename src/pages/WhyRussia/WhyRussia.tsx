@@ -1,9 +1,9 @@
-import Navbar from "../../assets/Navbar"
+import Navbar from "../../Components/Navbar"
 import WhyRussiaHero from "./WhyRussiaHero"
 import Benefits from "./Benefits"
 import StudenJobs from "./StudenJobs"
 import StudentLife from "./StudentLife"
-import Footer from "../../assets/Footer"
+import Footer from "../../Components/Footer"
 
 export default function WhyRussia() {
     return(

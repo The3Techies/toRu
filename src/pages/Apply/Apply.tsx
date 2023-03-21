@@ -1,7 +1,7 @@
-import Navbar from "../../assets/Navbar"
+import Navbar from "../../Components/Navbar"
 import ApplyHero from "./ApplyHero"
 import Form from "./Form"
-import Footer from "../../assets/Footer"
+import Footer from "../../Components/Footer"
 
 export default function Apply() {
     return(

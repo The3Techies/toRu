@@ -1,13 +1,13 @@
-import Navbar from "../../assets/Navbar"
+import Navbar from "../../Components/Navbar"
 import HomeHero from "./HomeHero"
 import WhyUs from "./WhyUs"
 import OurService from "./OurService"
 import ContactUs from "./ContactUs"
-import Footer from "../../assets/Footer"
+import Footer from "../../Components/Footer"
 
 export default function Home() {
     return(
-        <div>
+        <div className="">
             <Navbar/>
             <HomeHero/>
             <WhyUs/>
