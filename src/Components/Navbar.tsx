@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import {  useState } from "react";
-import { connect } from 'react-redux';
+import {useState } from "react";
+// import { useMyContext } from "../State/MyContext";
 import logo from '../assets/imgNavbar/logo.png'
 import MenuIconDark from '../assets/imgNavbar/MenuIconDark.png'
 import MenuIconLight from '../assets/imgNavbar/MenuIconLight.png'
@@ -12,6 +12,12 @@ export default function Navbar() {
     let navigate = useNavigate()
     const [openMenu, setOpenMenu] = useState(false)
     const btnfontStyle: string = "font-Cairo text-[#FFFFFF] cursor-pointer text-sm whitespace-nowrap hover:text- delay-150 ml-5 "
+
+    // const { state, setState } = useMyContext();
+    
+    // setState(prevState => ({
+    //     dark: !prevState.dark
+    //   }));
 
     return (
         <div className="fixed top-0 left-0 right-0 w-full bg-[#161616] flex justify-center">
