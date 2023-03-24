@@ -6,7 +6,6 @@ import Apply from "./pages/Apply/Apply";
 import Cities from "./pages/Cities/Cities";
 import City from "./pages/City/City";
 
-
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -16,11 +15,8 @@ const ScrollToTop = () => {
 }
 
 function App() {
-
-
-
   return (
-    <div >
+    <div className="bg-[#262627]">
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
@@ -33,7 +29,6 @@ function App() {
       </BrowserRouter>
     </div>
   )
- 
 }
 
 export default App
