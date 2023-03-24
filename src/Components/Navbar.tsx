@@ -1,5 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { cloneElement, useState } from "react";
+import {  useState } from "react";
+import { connect } from 'react-redux';
 import logo from '../assets/imgNavbar/logo.png'
 import MenuIconDark from '../assets/imgNavbar/MenuIconDark.png'
 import MenuIconLight from '../assets/imgNavbar/MenuIconLight.png'
@@ -10,16 +11,16 @@ import CloseIconLight from '../assets/imgNavbar/CloseIconLight.png'
 export default function Navbar() {
     let navigate = useNavigate()
     const [openMenu, setOpenMenu] = useState(false)
-    const btnfontStyle: string = "font-Cairo text-[#FFFFFF] cursor-pointer text-sm whitespace-nowrap hover:text- delay-150 "
+    const btnfontStyle: string = "font-Cairo text-[#FFFFFF] cursor-pointer text-sm whitespace-nowrap hover:text- delay-150 ml-5 "
 
     return (
         <div className="fixed top-0 left-0 right-0 w-full bg-[#161616] flex justify-center">
             <div className=" w-full max-w-6xl h-14  bg-opacity-50  flex justify-between items-center select-none ">
                 <div className="hidden md:flex  w-1/4 justify-between ml-7"  >
-                    <h1 className={btnfontStyle + "ml-5 " + (useLocation().pathname === "/Apply" ? 'font-extrabold' : '')} onClick={() => navigate("/Apply")} >قدم الان</h1>
-                    <h1 className={btnfontStyle + "ml-5 " + (useLocation().pathname === "/Cities" ? 'font-extrabold' : '')} onClick={() => navigate("/Cities")}>المدن</h1>
-                    <h1 className={btnfontStyle + "ml-5 " + (useLocation().pathname === "/WhyRussia" ? 'font-extrabold' : '')} onClick={() => navigate("/WhyRussia")}>لماذا روسيا</h1>
-                    <h1 className={btnfontStyle + "ml-5 " + (useLocation().pathname === "/" ? 'font-extrabold' : '')} onClick={() => navigate("/")}>الرئيسية</h1>
+                    <h1 className={btnfontStyle  + (useLocation().pathname === "/Apply" ? 'font-extrabold' : '')} onClick={() => navigate("/Apply")} >قدم الان</h1>
+                    <h1 className={btnfontStyle  + (useLocation().pathname === "/Cities" ? 'font-extrabold' : '')} onClick={() => navigate("/Cities")}>المدن</h1>
+                    <h1 className={btnfontStyle  + (useLocation().pathname === "/WhyRussia" ? 'font-extrabold' : '')} onClick={() => navigate("/WhyRussia")}>لماذا روسيا</h1>
+                    <h1 className={btnfontStyle  + (useLocation().pathname === "/" ? 'font-extrabold' : '')} onClick={() => navigate("/")}>الرئيسية</h1>
                 </div>
                 <div className="md:hidden ">
                     <img src={openMenu ? CloseIconDark : MenuIconDark} alt="Menu icon" className="ml-3 " onClick={() => setOpenMenu(!openMenu)} />
