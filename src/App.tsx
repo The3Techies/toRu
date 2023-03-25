@@ -1,12 +1,11 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { useMyContext } from "./State/MyContext";
 import Home from './pages/Home/Home';
 import WhyRussia from "./pages/WhyRussia/WhyRussia";
 import Apply from "./pages/Apply/Apply";
 import Cities from "./pages/Cities/Cities";
 import City from "./pages/City/City";
-import { MyProvider } from "./State/MyContext";
-
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -17,11 +16,13 @@ const ScrollToTop = () => {
 }
 
 function App() {
+
+  const { state, setState } = useMyContext();
+
   return (
-    <div className="bg-[#262627]">
+    <div className={state.bgApp}>
       <BrowserRouter>
         <ScrollToTop />
-        <MyProvider>
         <Routes>
           
             <Route path="/" element={<Home />} />
@@ -31,7 +32,6 @@ function App() {
             <Route path="/City" element={<City />} />
         
         </Routes>
-        </MyProvider>
       </BrowserRouter>
     </div>
   )

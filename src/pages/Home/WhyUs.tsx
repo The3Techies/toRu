@@ -1,9 +1,12 @@
+import { useMyContext } from "../../State/MyContext";
 import logo1 from '../../assets/imgHome/WhyUsLogo1.png'
 import logo2 from '../../assets/imgHome/WhyUsLogo2.png'
 import logo3 from '../../assets/imgHome/WhyUsLogo3.png'
 
 
+
 export default function WhyUs() {
+    const { state, setState } = useMyContext();
 
     const logo: Array<string> = [logo1,logo2,logo3]
     const titles: Array<string> = ["من نكون؟","ماذا نعمل؟","لماذا؟"]
@@ -16,22 +19,21 @@ export default function WhyUs() {
         return (
         <div className='flex flex-col items-center md:w-1/4 m-4 md:m-0 '>
             <img src={logo[i]} className="w-14 h-14 rounded-full " />
-            <h1 className='font-Cairo text-[#FFFFFF] mt-4 text-xl text-center'>{titles[i]}</h1>
-            <p className='font-Cairo text-[#FFFFFF] text-14px leading-relaxed text-center font-light'>{pras[i]}</p>
+            <h1 className={'font-Cairo mt-4 text-xl text-center ' + state.fontColor}>{titles[i]}</h1>
+            <p className={'font-Cairo text-14px leading-relaxed text-center font-light ' + state.fontColor}>{pras[i]}</p>
         </div>)
     })
-    
 
     return (
-        <div className="w-full  flex justify-center md:mt-6 ">
-            <div className="shadow-lg shadow-[#e0e0e0] rounded-2xl w-full max-w-6xl md:h-475px my-4 md:my-0 flex flex-col justify-center items-center select-none bg-[#161616] mx-2" >
+        <div className="w-full  flex justify-center md:mt-4">
+            <div className={"shadow-lg rounded-2xl w-full max-w-6xl md:h-475px my-4 md:my-0 flex flex-col justify-center items-center select-none mx-2 " + state.bgColor + state.shadowColor} >
                 <div >
                     <div className='flex justify-center mb-2 '>
-                        <div className="h-px w-6 mt-4 mr-1 bg-[#FFFFFF] " ></div>
-                        <p className='font-Cairo text-[#FFFFFF] text-base'>من نحن؟</p>
-                        <div className="h-px w-6 mt-4 ml-1 bg-[#FFFFFF]" ></div>
+                        <div className={'h-px w-6 mt-4 mr-1 ' + (state.dark ? "bg-[#FFFFFF] " : "bg-[#214966] ")} ></div>
+                        <p className={'font-Cairo text-base ' + state.fontColor}>من نحن؟</p>
+                        <div className={'h-px w-6 mt-4 ml-1 ' + (state.dark ? "bg-[#FFFFFF] " : "bg-[#214966] ")} ></div>
                     </div>
-                    <h1 className='font-Cairo text-[#FFFFFF] md:text-2xl font-extrabold'>حسنا, سوف نجيب على بعض الأسئلة</h1>
+                    <h1 className={'font-Cairo md:text-2xl font-extrabold '+ state.fontColor}>حسنا, سوف نجيب على بعض الأسئلة</h1>
                 </div>
                 <div className='flex md:flex-row-reverse flex-col mt-10 justify-around items-center ' >
                     {WhyUS}

@@ -8,16 +8,30 @@ interface MyContextValue {
 }
 
 interface MyComponentProps {
-    children: React.ReactNode;
-  }
+  children: React.ReactNode;
+}
 
 const MyContext = createContext<MyContextValue>({
-  state: { dark: true },
-  setState: () => {},
+  state: {
+    dark: true,
+    fontColor: "text-[#FFFFFF] ",
+    bgColor: "bg-[#161616] ", bgApp: "bg-[#262627] ",
+    shadowColor: "shadow-[#e0e0e0] ",
+    borderColer: "border-[#FFFFFF] "
+
+  },
+  setState: () => { },
 });
 
 export const MyProvider: React.FC<MyComponentProps> = ({ children }) => {
-  const [state, setState] = useState<MyState>({ dark: false });
+  const [state, setState] = useState<MyState>({
+    dark: true,
+    fontColor: "text-[#FFFFFF] ", 
+    bgColor: "bg-[#161616] ",
+     bgApp: "bg-[#262627] ", 
+     shadowColor: "shadow-[#e0e0e0] ", 
+     borderColer: "border-[#FFFFFF] "
+  });
 
   return (
     <MyContext.Provider value={{ state, setState }}>
