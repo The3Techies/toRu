@@ -2,7 +2,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { useMyContext } from "../State/MyContext";
 import { BsToggleOff, BsToggleOn } from 'react-icons/bs';
-import { BiMenuAltLeft } from 'react-icons/Bi';
+import { BiMenuAltLeft } from 'react-icons/bi';
 import {MdClose } from 'react-icons/md';
 import logo from '../assets/imgNavbar/logo.png'
 
