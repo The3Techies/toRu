@@ -60,7 +60,7 @@ export default function Navbar() {
                 </div>
                 <div className="flex mt-3 cursor-pointer" onClick={() => navigate("/")}>
                     <div className='mr-4' >
-                        <h1 className={"font-Cairo text-xl md:text-2xl font-bold whitespace-nowrap " + state.fontColor}>الى روسيا</h1>
+                        <h1 className={"font-Cairo text-xl md:text-2xl font-bold whitespace-nowrap " + state.fontColor}>إلى روسيا</h1>
                         <p className={"font-Cairo text-xs ml-1.5 font-thin " + state.fontColor}>للخدمات الطلابية</p>
                     </div>
                     <div>
