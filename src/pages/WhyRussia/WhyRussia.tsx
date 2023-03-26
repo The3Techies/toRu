@@ -7,7 +7,7 @@ import Footer from "../../Components/Footer"
 
 export default function WhyRussia() {
     return(
-        <div>
+        <div >
             <Navbar/>
             <WhyRussiaHero/>
             <Benefits/>
