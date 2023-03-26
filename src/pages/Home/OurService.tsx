@@ -59,7 +59,7 @@ const arry= [
                         <h1 className={'font-Cairo md:text-2xl font-black text-center ' + state.fontColor}>500$</h1>
 
                     </div>
-                    <div className='flex md:flex-row-reverse flex-col mt-10 justify-around items-center ' >
+                    <div className='flex md:flex-row-reverse flex-col mt-10 justify-around  ' >
                         {WhyUS}
                     </div>
                 </div>
