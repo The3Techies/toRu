@@ -48,7 +48,7 @@ const arry= [
     return (
         <div>
             <div className='w-full  flex justify-center md:mt-10 '>
-                <div className={'shadow-lg rounded-2xl w-full max-w-6xl  my-4 md:my-0 md:py-6 flex flex-col justify-center items-center select-none mx-2 ' + state.bgColor + state.shadowColor} >
+                <div className={'shadow-lg rounded-2xl w-full max-w-6xl my-4 md:my-0 py-6 flex flex-col justify-center items-center select-none mx-2 ' + state.bgColor + state.shadowColor} >
                     <div >
                         <div className='flex justify-center mb-2 '>
                             <div className={'h-px w-6 mt-4 mr-1 ' + (state.dark ? "bg-[#FFFFFF] " : "bg-[#214966] ")} ></div>

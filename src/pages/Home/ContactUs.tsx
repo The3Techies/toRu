@@ -23,7 +23,7 @@ export default function ContactUs() {
   return (
     <div>
       <div className='w-full flex justify-center md:mt-10 '>
-        <div className={'shadow-lg rounded-2xl w-full max-w-6xl md:pb-10 my-4 md:my-0 flex flex-col justify-center items-center select-none mx-2 ' + state.bgColor + state.shadowColor}>
+        <div className={'shadow-lg rounded-2xl w-full max-w-6xl pb-10 my-4 md:my-0 flex flex-col justify-center items-center select-none mx-2 ' + state.bgColor + state.shadowColor}>
 
           <div className="my-6">
             <div className='flex justify-center mb-2'>
@@ -63,7 +63,7 @@ export default function ContactUs() {
               <div className="flex mb-10 cursor-pointer">
                 <div>
                   <h1 className={'font-Cairo  font-bold text-right '  + state.fontColor}>ايميل</h1>
-                  <p className={'font-Cairo text-right mt-1 select-text '  + state.fontColor}>torussiacampany@gmail.com</p>
+                  <p className={'font-Cairo text-right mt-1 select-text '  + state.fontColor}>ssiacam@gmail.com</p>
                 </div>
                 <img src={emailIcon} className="w-12 h-12 ml-4" />
               </div>
