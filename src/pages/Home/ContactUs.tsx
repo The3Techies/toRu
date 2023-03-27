@@ -23,7 +23,7 @@ export default function ContactUs() {
   return (
     <div>
       <div className='w-full flex justify-center md:mt-10 '>
-        <div className={'shadow-lg rounded-2xl w-full max-w-6xl pb-10 my-4 md:my-0 flex flex-col justify-center items-center select-none mx-2 ' + state.bgColor + state.shadowColor}>
+        <div className={'shadow-lg rounded-2xl w-full max-w-6xl pb-10 my-4 md:my-0 flex flex-col justify-center items-center mx-2 ' + state.bgColor + state.shadowColor}>
 
           <div className="my-6">
             <div className='flex justify-center mb-2'>

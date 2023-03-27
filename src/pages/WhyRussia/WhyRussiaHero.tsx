@@ -1,4 +1,3 @@
-import HeroImg from '../../assets/imgHome/HeroImg.png'
 import { useMyContext } from "../../State/MyContext";
 
 
@@ -6,17 +5,15 @@ export default function WhyRussiaHero() {
 
     const { state } = useMyContext();
 
-    return(
-        <div className="w-full mt-14 flex justify-center  ">
-        {/* <div className="w-full max-w-6xl h-60 md:h-500px flex justify-around items-center select-none ">
-            <div className="ml-2 md:ml-10 ">
-                <img src={HeroImg} className="h-46 w-46 md:h-96 md:w-96 object-contain hidden md:block" alt="" />
+    return (
+        <div className="w-full mt-14 md:mt-0 flex justify-center  ">
+            <div className="w-full max-w-6xl h-screen flex justify-start items-center bg-WhyRussia-hero-pattern bg-no-repeat bg-right-bottom bg-[length:90rem_45rem] -mr-24">
+                <div className="text-right md:w-1/3 mr-16 ">
+                    <h1 className="font-Cairo text-base md:text-3xl font-extrabold mb-2 md:mb-8 leading-normal text-[#DE9F67] md:-mr-10 md:text-center ">الدراسة في روسيا: تجربة فريدة وبأسعار معقولة</h1>
+                    <p className={"font-Cairo text-xs md:text-sm font-light md:-mr-10 text-right tracking-wide " + state.fontColor} >الدراسة في روسيا تجربة فريدة وثرية تتيح فرصًا لا مثيل لها للطلاب الذين يبحثون عن توسيع آفاقهم. تتميز الجامعات الروسية بتراث ثقافي غني ومدن حيوية وجامعات عالمية المستوى في مجالات مثل الهندسة والطب والرياضيات. بالإضافة إلى ذلك، فإن الرسوم الدراسية في روسيا معقولة وتكاليف المعيشة منخفضة، مما يجعل الدراسة في روسيا خيارًا ميسور التكلفة للعديد من الطلاب. يمكن لاختيار روسيا كوجهة للدراسة فتح عالمًا من الفرص وتوفير منظور عالمي ثمين سيفيد الطلاب طوال حياتهم الأكاديمية والمهنية.</p>
+                </div>
+                
             </div>
-            <div className="text-right mr-6 w-570px ">
-                <h1 className={"font-Cairo text-lg md:text-50px font-extrabold mb-2 md:mb-8 leading-relaxed " + state.fontColor}>ترغب بالدراسة في روسيا؟</h1>
-                <p className= {"font-Cairo text-xs md:text-lg font-light " + state.fontColor} >معنا تستطيع تحقيق حلمك بالدراسة في افضل الجامعات الروسية وفي اي تخصص جامعي ترغب به</p>
-            </div>
-        </div> */}
-    </div>
+        </div>
     )
 }
