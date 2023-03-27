@@ -15,12 +15,23 @@ module.exports = {
       
       },
       height: {
-        '500px': '500px',
+        '47rem': '47rem',
         '475px' : '475px'
       },
       width: {
         '570px': '570px',
       },
+      backgroundImage: {
+        'WhyRussia-hero-pattern': "url('./assets/imgWhyRussia/hero.png')",
+      },
+      gridRowStart: {
+        '8': '8',
+        '9': '9',
+        '10': '10',
+        '11': '11',
+        '12': '12',
+        '13': '13',
+      }
      
     
     },
