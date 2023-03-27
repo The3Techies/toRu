@@ -4,7 +4,6 @@ import { TbMinusVertical } from 'react-icons/tb';
 
 export default function Benefits() {
     const { state } = useMyContext();
-
     const col1 = [
         {
             Title: "تعليم عالي الجودة",
@@ -33,7 +32,6 @@ export default function Benefits() {
         }
         
     ]
-    const col2 = [1,2,3,4,5,6,7,8,9,10]
     const col3 = [
         
         {
@@ -61,8 +59,8 @@ export default function Benefits() {
             Par : "تشتهر روسيا بكونها بلدًا آمنًا وآمنًا ، مع مستويات منخفضة من الجرائم العنيفة ووجود قوي للشرطة.",
             Row : "row-start-10"
         }
-        
     ]
+    const col2 = [1,2,3,4,5,6,7,8,9,10]
 
     const HtmlCol1: Array<JSX.Element> = col1.map(({ Title, Par, Row }, i) => {
         return (
@@ -91,8 +89,6 @@ export default function Benefits() {
         </div>
         )
     })
-
-
 
     return (
         <div className="w-full mt-14 md:mt-0 flex justify-center ">
