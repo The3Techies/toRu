@@ -62,7 +62,7 @@ export default function ContactUs() {
 
               <div className="flex mb-10 cursor-pointer">
                 <div>
-                  <h1 className={'font-Cairo  font-bold text-right '  + state.fontColor}>ايميل</h1>
+                  <h1 className={'font-Cairo font-bold text-right '  + state.fontColor}>ايميل</h1>
                   <p className={'font-Cairo text-right mt-1 select-text '  + state.fontColor}>ssiacam@gmail.com</p>
                 </div>
                 <img src={emailIcon} className="w-12 h-12 ml-4" />
