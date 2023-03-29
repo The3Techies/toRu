@@ -68,12 +68,12 @@ export default function Benefits() {
 
                 <div className="md:hidden col-start-6 col-end-6 flex flex-col items-center select-none">
                     <div className={"rounded-full w-10 h-10 flex justify-center items-center " + (state.dark ? "bg-[#FFFFFF]" : "bg-[#214966]")} >
-                        <p className="text-center text-[#DE9F67]">{i + 1}</p>
+                        <p className="text-center text-[#DE9F67] ">{i + 1}</p>
                     </div>
                 </div>
 
                 <h1 className={'font-Cairo text-xl text-center ' + state.fontColor}>{Title}</h1>
-                <p className={'font-Cairo text-sm leading-relaxed text-center font-light ' + state.fontColor}>{Par}</p>
+                <p className={'font-Cairo text-sm leading-relaxed text-center font-light px-2 mb-6 md:px-0 md:mb-0 ' + state.fontColor}>{Par}</p>
             </div>
         )
     })
@@ -99,13 +99,13 @@ export default function Benefits() {
                 </div>
 
                 <h1 className={'font-Cairo text-xl text-center ' + state.fontColor}>{Title}</h1>
-                <p className={'font-Cairo text-sm leading-relaxed  text-center font-light ' + state.fontColor}>{Par}</p>
+                <p className={'font-Cairo text-sm leading-relaxed  text-center font-light  px-2 mb-6 md:px-0 md:mb-0 ' + state.fontColor}>{Par}</p>
             </div>
         )
     })
 
     return (
-        <div className="w-full  flex justify-center ">
+        <div className="w-full flex justify-center ">
             <div className={"shadow-lg rounded-2xl w-full max-w-6xl md:grid grid-cols-11 grid-rows-12 py-10 mx-2 " + state.bgColor + state.shadowColor}>
                 {HtmlCol1}
                 {HtmlCol2}

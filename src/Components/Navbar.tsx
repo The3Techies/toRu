@@ -51,8 +51,8 @@ export default function Navbar() {
                         {openMenu ? <MdClose className={"w-10 h-10 mx-4 " + state.fontColor} onClick={() => setOpenMenu(!openMenu)} /> : <BiMenuAltLeft className={"w-10 h-10 mx-4 " + state.fontColor} onClick={() => setOpenMenu(!openMenu)} />}
                         {state.dark ? <BsToggleOff className="text-[#FFFFFF] text-2xl cursor-pointer "  onClick={SetToLight} /> : <BsToggleOn className="text-[#214966] text-2xl cursor-pointer" onClick={SetToDark} />}
                     </div>
-                    <ul className={"mt-1 w-28 " + (openMenu ? 'absolute ' : ' hidden ') + state.bgColor}>
-                        <li><h1 className={btnfontStyle + " mr-2 text-right " + (useLocation().pathname === "/" ? 'font-extrabold' : '')} onClick={() => navigate("/")}>الرئيسية</h1></li>
+                    <ul className={"mt-1 w-28  " + (openMenu ? 'absolute ' : ' hidden ') + state.bgColor}>
+                        <li><h1 className={btnfontStyle + " mr-2 text-right  " + (useLocation().pathname === "/" ? 'font-extrabold' : '')} onClick={() => navigate("/")}>الرئيسية</h1></li>
                         <li><h1 className={btnfontStyle + " mt-3 text-right mr-2 " + (useLocation().pathname === "/WhyRussia" ? 'font-extrabold' : '')} onClick={() => navigate("/WhyRussia")}>لماذا روسيا</h1></li>
                         <li><h1 className={btnfontStyle + " mt-3 text-right mr-2 " + (useLocation().pathname === "/Cities" ? 'font-extrabold' : '')} onClick={() => navigate("/Cities")}>المدن</h1></li>
                         <li><h1 className={btnfontStyle + " mt-3 mb-4 text-right mr-2 " + (useLocation().pathname === "/Apply" ? 'font-extrabold' : '')} onClick={() => navigate("/Apply")}>قدم الان</h1></li>
