@@ -105,7 +105,7 @@ export default function Benefits() {
     })
 
     return (
-        <div className="w-full mt-14 md:mt-0 flex justify-center ">
+        <div className="w-full  flex justify-center ">
             <div className={"shadow-lg rounded-2xl w-full max-w-6xl md:grid grid-cols-11 grid-rows-12 py-10 mx-2 " + state.bgColor + state.shadowColor}>
                 {HtmlCol1}
                 {HtmlCol2}
