@@ -16,13 +16,10 @@ module.exports = {
       },
       height: {
         '47rem': '47rem',
-        '475px' : '475px'
-      },
-      width: {
-        '570px': '570px',
       },
       backgroundImage: {
-        'WhyRussia-hero-pattern': "url('./assets/imgWhyRussia/hero.png')",
+        'WhyRussia-hero': "url('./assets/imgWhyRussia/hero.png')",
+        'WhyRussia-heroSS': "url('./assets/imgWhyRussia/heroSS.png')"
       },
       gridRowStart: {
         '8': '8',
@@ -31,10 +28,7 @@ module.exports = {
         '11': '11',
         '12': '12',
         '13': '13',
-      }
-     
-    
+      },
     },
-  },
-  plugins: [],
+  }
 }
