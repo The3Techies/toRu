@@ -41,8 +41,8 @@ export default function CitiesCards() {
 
     const CitsCards: Array<JSX.Element> = arry.map(({ name, img}, i) => {
         return (
-            <div className={"w-60 h-80 flex justify-center items-center rounded-lg " + state.bgColor} >
-                <div className="flex flex-col  items-center justify-center w-48 h-full ">
+            <div className={"w-60 h-80 flex justify-center items-center rounded-2xl shadow-lg " + state.bgColor + state.shadowColor} >
+                <div className="flex flex-col  items-center justify-center w-48 h-full -mt-2 ">
                     <img src={img} className="pointer-events-none h-48 rounded-lg opacity-60 "></img>
                     <h1 className={"font-Cairo font-bold text-2xl self-start " + state.fontColor}>{name}</h1>
                     <p className="font-Cairo text-[#0921FF] text-lg self-start cursor-pointer " onClick={() => navigate("/City")}>اعرف المزيد</p>
