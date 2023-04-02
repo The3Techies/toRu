@@ -6,7 +6,7 @@ export default function HomeHero() {
 
 
     return (
-        <div className="w-full mt-14 flex justify-center  ">
+        <div className="w-full mt-14 flex justify-center ">
             <div className="w-full max-w-6xl h-screen flex justify-around items-center ">
                 <div className="ml-2 md:ml-10 ">
                     <img src={HeroImg} className="select-none h-46 w-46 md:h-96 md:w-96 object-contain hidden md:block" alt="" />

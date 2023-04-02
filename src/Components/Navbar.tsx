@@ -37,7 +37,7 @@ export default function Navbar() {
     }
 
     return (
-        <div className={"fixed top-0 left-0 right-0 w-full flex justify-center " + state.bgColor}>
+        <div className={"fixed top-0 left-0 right-0 w-full flex justify-center  hover:opacity-100 z-50 " + state.bgColor}>
             <div className=" w-full max-w-6xl h-14  bg-opacity-50  flex justify-between items-center select-none ">
                 <div className="hidden md:flex  justify-between ml-7"  >
                     {state.dark ? <BsToggleOff className="text-[#FFFFFF] text-2xl cursor-pointer" onClick={SetToLight} /> : <BsToggleOn className="text-[#214966] text-2xl cursor-pointer" onClick={SetToDark} />}

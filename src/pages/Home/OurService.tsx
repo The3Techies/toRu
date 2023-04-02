@@ -5,7 +5,7 @@ import logoPath3 from '../../assets/imgHome/OurServiceLogo4.png'
 import logoPath4 from '../../assets/imgHome/OurServiceLogo1.png'
 
 export default function OurService() {
-    const { state, setState } = useMyContext();
+    const { state } = useMyContext();
 
    
 const arry= [
