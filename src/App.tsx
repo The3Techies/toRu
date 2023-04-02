@@ -24,13 +24,11 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          
-            <Route path="/" element={<Home />} />
-            <Route path="/WhyRussia" element={<WhyRussia />} />
-            <Route path="/Apply" element={<Apply />} />
-            <Route path="/Cities" element={<Cities />} />
-            <Route path="/City" element={<City />} />
-        
+          <Route path="/" element={<Home />} />
+          <Route path="/WhyRussia" element={<WhyRussia />} />
+          <Route path="/Apply" element={<Apply />} />
+          <Route path="/Cities" element={<Cities />} />
+          <Route path="/City" element={<City />} />
         </Routes>
       </BrowserRouter>
     </div>
