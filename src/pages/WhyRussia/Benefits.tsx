@@ -2,7 +2,7 @@ import { useMyContext } from "../../State/MyContext";
 import { TbMinusVertical } from 'react-icons/tb';
 
 
-export default function Benefits() {
+const Benefits = () => {
     const { state } = useMyContext();
     const col1 = [
         {
@@ -114,3 +114,5 @@ export default function Benefits() {
         </div>
     )
 }
+
+export default Benefits

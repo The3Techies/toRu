@@ -8,7 +8,7 @@ import Kazan from '../../assets/imgCities/Kazan.jpg'
 import Rostov from '../../assets/imgCities/Rostov.jpg'
 import Yekaterinburg from '../../assets/imgCities/Yekaterinburg.jpg'
 
-export default function CitiesHero() {
+const CitiesHero = () => {
     const { state } = useMyContext()
     let index: number = 0
     const names: Array<string> = ["Moscow", "St Petersburg", "Ufa", "Kazan", "Rostov", "Yekaterinburg"]
@@ -70,3 +70,5 @@ export default function CitiesHero() {
         </div>
     )
 }
+
+export default CitiesHero

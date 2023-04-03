@@ -5,7 +5,7 @@ import OurService from "./OurService"
 import ContactUs from "./ContactUs"
 import Footer from "../../Components/Footer"
 
-export default function Home() {
+const Home = () => {
     return(
         <div >
             <Navbar/>
@@ -17,3 +17,5 @@ export default function Home() {
         </div>
     )
 }
+
+export default Home

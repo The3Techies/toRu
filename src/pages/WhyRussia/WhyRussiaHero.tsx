@@ -1,8 +1,7 @@
-import { useMyContext } from "../../State/MyContext";
+import { useMyContext } from "../../State/MyContext"
 
-export default function WhyRussiaHero() {
+const WhyRussiaHero = () => {
     const { state } = useMyContext();
-
 
     return (
         <div className="w-full h-screen mt-10 flex justify-center ">
@@ -15,3 +14,5 @@ export default function WhyRussiaHero() {
         </div>
     )
 }
+
+export default WhyRussiaHero

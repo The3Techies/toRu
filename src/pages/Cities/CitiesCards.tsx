@@ -7,8 +7,7 @@ import Kazan from '../../assets/imgCities/Kazan.jpg'
 import Rostov from '../../assets/imgCities/Rostov.jpg'
 import Yekaterinburg from '../../assets/imgCities/Yekaterinburg.jpg'
 
-
-export default function CitiesCards() {
+const CitiesCards = () => {
     const { state } = useMyContext()
     let navigate = useNavigate()
 
@@ -39,26 +38,27 @@ export default function CitiesCards() {
         },
     ]
 
-    const CitsCards: Array<JSX.Element> = arry.map(({ name, img}, i) => {
+    const CitsCards: Array<JSX.Element> = arry.map(({ name, img }, i) => {
         return (
-            <div className={"w-60 h-80 flex justify-center items-center rounded-2xl shadow-lg " + state.bgColor + state.shadowColor} >
+            <div key={i} className={"w-60 h-80 flex justify-center items-center rounded-2xl shadow-lg " + state.bgColor + state.shadowColor} >
                 <div className="flex flex-col  items-center justify-center w-48 h-full -mt-2 ">
                     <img src={img} className="pointer-events-none h-48 rounded-lg opacity-60 "></img>
                     <h1 className={"font-Cairo font-bold text-2xl self-start " + state.fontColor}>{name}</h1>
-                    <p className="font-Cairo text-[#0921FF] text-lg self-start cursor-pointer " onClick={() => navigate("/City")}>اعرف المزيد</p>
+                    <p className="font-Cairo text-[#0921FF] text-lg self-start cursor-pointer " onClick={() => navigate(`/City/${name}`)}>اعرف المزيد</p>
                 </div>
             </div>
         )
     })
 
 
-
     return (
         <div className="w-full mt-8 flex justify-center ">
 
-            <div className="w-full max-w-6xl flex justify-center gap-4 flex-wrap ">
+            <div className={"w-full max-w-6xl flex justify-center gap-4 flex-wrap p-8 rounded-2xl shadow-lg mx-2 " + state.bgColor + state.shadowColor}>
                 {CitsCards}
             </div>
         </div>
     )
-}
+} 
+
+export default CitiesCards
