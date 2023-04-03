@@ -1,16 +1,11 @@
 import { useState } from "react"
 import { useMyContext } from "../../State/MyContext";
-
-import {BsWhatsapp} from  'react-icons/bs';
-
 import whatsappIcon from '../../assets/imgHome/whatsappIcon.png'
 import telegramIcon from '../../assets/imgHome/telegramIcon.png'
 import emailIcon from '../../assets/imgHome/emailIcon.png'
 
-
-
-export default function ContactUs() {
-  const { state, setState } = useMyContext();
+const ContactUs =() => {
+  const { state } = useMyContext();
 
   const [name, SetName] = useState<string>("")
   const [email, SetEmail] = useState<string>("")
@@ -74,3 +69,5 @@ export default function ContactUs() {
     </div>
   )
 }
+
+export default ContactUs

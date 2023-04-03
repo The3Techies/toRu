@@ -3,7 +3,7 @@ import WhyRussiaHero from "./WhyRussiaHero"
 import Benefits from "./Benefits"
 import Footer from "../../Components/Footer"
 
-export default function WhyRussia() {
+const WhyRussia = () => {
     return(
         <div >
             <Navbar/>
@@ -13,3 +13,5 @@ export default function WhyRussia() {
         </div>
     )
 }
+
+export default WhyRussia

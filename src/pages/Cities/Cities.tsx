@@ -3,7 +3,7 @@ import CitiesHero from "./CitiesHero"
 import CitiesCards from "./CitiesCards"
 import Footer from "../../Components/Footer"
 
-export default function Cities() {
+const Cities = () => {
     return(
         <div>
             <Navbar/>
@@ -13,3 +13,5 @@ export default function Cities() {
         </div>
     )
 }
+
+export default Cities

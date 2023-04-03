@@ -16,9 +16,7 @@ const ScrollToTop = () => {
 }
 
 function App() {
-
-  const { state, setState } = useMyContext();
-
+  const { state } = useMyContext();
   return (
     <div className={state.bgApp}>
       <BrowserRouter>
@@ -28,7 +26,7 @@ function App() {
           <Route path="/WhyRussia" element={<WhyRussia />} />
           <Route path="/Apply" element={<Apply />} />
           <Route path="/Cities" element={<Cities />} />
-          <Route path="/City" element={<City />} />
+          <Route path="/City/:name" element={<City />} />
         </Routes>
       </BrowserRouter>
     </div>

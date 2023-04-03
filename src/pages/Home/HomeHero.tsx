@@ -1,9 +1,8 @@
 import HeroImg from '../../assets/imgHome/HeroImg.png'
 import { useMyContext } from "../../State/MyContext";
 
-export default function HomeHero() {
+const HomeHero = () => {
     const { state } = useMyContext();
-
 
     return (
         <div className="w-full mt-14 flex justify-center ">
@@ -19,3 +18,5 @@ export default function HomeHero() {
         </div>
     )
 }
+
+export default HomeHero

@@ -3,7 +3,7 @@ import logoPath1 from '../../assets/imgHome/WhyUsLogo1.png'
 import logoPath2 from '../../assets/imgHome/WhyUsLogo2.png'
 import logoPath3 from '../../assets/imgHome/WhyUsLogo3.png'
 
-export default function WhyUs() {
+const WhyUs = () => {
     const { state } = useMyContext();
 
     const arry = [
@@ -49,4 +49,6 @@ export default function WhyUs() {
             </div>
         </div>
     )
-}
+} 
+
+export default WhyUs

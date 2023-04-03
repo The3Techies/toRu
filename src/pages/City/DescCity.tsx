@@ -1,9 +1,11 @@
-export default function DescCity() {
+import MyComponentProps from './MyComponentProps'
 
-    return(
-        <div>
-           descCity - description about the city
-
-        </div>
-    )
+const DescCity: React.FC<MyComponentProps> = ({ name }) => {
+    return (
+        <div >
+            {name}  descCity - description about the city
+        </div> 
+    );
 }
+
+export default DescCity
