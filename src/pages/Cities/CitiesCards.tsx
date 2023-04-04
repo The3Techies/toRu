@@ -50,7 +50,6 @@ const CitiesCards = () => {
         )
     })
 
-
     return (
         <div className="w-full mt-8 flex justify-center ">
 

@@ -3,8 +3,7 @@ import CityHero from "./CityHero"
 import DescCity from "./DescCity"
 import TopUnivers from "./TopUnivers"
 import Footer from "../../Components/Footer"
-import { useParams } from "react-router-dom"
-import React from 'react';
+import {useParams} from "react-router-dom"
 
 const City:React.FC = () => {
     const { name } = useParams()
