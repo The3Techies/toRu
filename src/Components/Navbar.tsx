@@ -6,8 +6,6 @@ import { BiMenuAltLeft } from 'react-icons/bi';
 import {MdClose } from 'react-icons/md';
 import logo from '../assets/imgNavbar/logo.png'
 
-
-
 export default function Navbar() {
     const { state, setState } = useMyContext();
     let navigate = useNavigate()
