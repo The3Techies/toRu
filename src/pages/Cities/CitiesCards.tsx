@@ -40,7 +40,7 @@ const CitiesCards = () => {
 
     const CitsCards: Array<JSX.Element> = arry.map(({ name, img }, i) => {
         return (
-            <div key={i} className={"w-60 h-80 flex justify-center items-center rounded-2xl shadow-lg " + state.bgColor + state.shadowColor} >
+            <div key={i} className={"w-60 h-80 flex justify-center items-center rounded-2xl shadow-lg  " + state.bgApp + state.shadowColor} >
                 <div className="flex flex-col  items-center justify-center w-48 h-full -mt-2 ">
                     <img src={img} className="pointer-events-none h-48 rounded-lg opacity-60 "></img>
                     <h1 className={"font-Cairo font-bold text-2xl self-start " + state.fontColor}>{name}</h1>
@@ -53,7 +53,7 @@ const CitiesCards = () => {
     return (
         <div className="w-full mt-8 flex justify-center ">
 
-            <div className={"w-full max-w-6xl flex justify-center gap-4 flex-wrap p-8 rounded-2xl shadow-lg mx-2 " + state.bgColor + state.shadowColor}>
+            <div className={"w-full max-w-6xl flex justify-center gap-8 flex-wrap p-8 rounded-2xl shadow-lg mx-2 " + state.bgColor + state.shadowColor}>
                 {CitsCards}
             </div>
         </div>
