@@ -1,9 +1,9 @@
 import MyComponentProps from './MyComponentProps'
 
-const CityHero: React.FC<MyComponentProps> = ({ name }) => {
+const CityHero: React.FC<MyComponentProps> = ({ Cityname }) => {
     return (
         <div className='mt-20'>
-            {name}
+            {Cityname}
         </div>
     );
 }

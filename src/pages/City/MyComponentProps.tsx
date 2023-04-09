@@ -1,6 +1,6 @@
 
 interface MyComponentProps {
-    name: string;
+    Cityname: string;
 }
 
 export default MyComponentProps
