@@ -1,10 +1,10 @@
 import MyComponentProps from './MyComponentProps'
 import { useMyContext } from "../../State/MyContext"
 
-const DescCity: React.FC<MyComponentProps> = ({ name }) => {
+const DescCity: React.FC<MyComponentProps> = ({ Cityname }) => {
     const { state } = useMyContext()
     let index: number = 0
-    switch (name) {
+    switch (Cityname) {
         case "Moscow":
             index = 0
             break

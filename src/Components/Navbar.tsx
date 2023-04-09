@@ -17,7 +17,7 @@ export default function Navbar() {
             dark: true,
             fontColor: "text-[#FFFFFF] ",
             bgColor: "bg-[#161616] ",
-            bgApp: "bg-[#262627] ",
+            bgApp: "bg-[#282828] ",
             shadowColor: "shadow-[#e0e0e0] ",
             borderColer: "border-[#FFFFFF] "
         })

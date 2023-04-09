@@ -15,7 +15,8 @@ const MyContext = createContext<MyContextValue>({
   state: {
     dark: true,
     fontColor: "text-[#FFFFFF] ",
-    bgColor: "bg-[#161616] ", bgApp: "bg-[#262627] ",
+    bgColor: "bg-[#161616] ",
+    bgApp: "bg-[#282828] ",
     shadowColor: "shadow-[#e0e0e0] ",
     borderColer: "border-[#FFFFFF] "
 
@@ -28,7 +29,7 @@ export const MyProvider: React.FC<MyComponentProps> = ({ children }) => {
     dark: true,
     fontColor: "text-[#FFFFFF] ",
     bgColor: "bg-[#161616] ",
-    bgApp: "bg-[#262627] ",
+    bgApp: "bg-[#282828] ",
     shadowColor: "shadow-[#e0e0e0] ",
     borderColer: "border-[#FFFFFF] "
   });

@@ -10,9 +10,9 @@ const City:React.FC = () => {
     return (
         <div>
             <Navbar />
-            <CityHero name={name || ""}/>
-            <DescCity name={name || ""}/>
-            <TopUnivers name={name || ""} />
+            <CityHero Cityname={name || ""}/>
+            <DescCity Cityname={name || ""}/>
+            <TopUnivers Cityname={name || ""} />
             <Footer />
         </div>
     )
