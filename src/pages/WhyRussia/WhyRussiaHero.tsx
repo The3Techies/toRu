@@ -4,7 +4,7 @@ const WhyRussiaHero = () => {
     const { state } = useMyContext();
 
     return (
-        <div className="w-full h-screen mt-10 flex justify-center ">
+        <div className="w-full h-screen mt-[3.5rem] flex justify-center ">
             <div className=" max-w-6xl h-screen flex items-center bg-WhyRussia-heroSS md:bg-WhyRussia-hero bg-[length:250%_100%] md:bg-[length:100%_100%] bg-right bg-no-repeat ">
                 <div className="text-right md:w-1/2 md:ml-10 mx-4">
                     <h1 className="font-Cairo text-base md:text-3xl font-extrabold mb-2 leading-normal text-[#DE9F67] text-center ">الدراسة في روسيا: تجربة فريدة وبأسعار معقولة</h1>

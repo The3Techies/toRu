@@ -136,7 +136,7 @@ const TopUnivers: React.FC<MyComponentProps> = ({ Cityname }) => {
           <a className='font-Cairo text-sm md:text-base text-center mx-8 text-[#48cae4] font-bold underline ' target="_blank" href={link}>موقح الجامعة</a>
         </div>
         <div >
-          <img src={Cityimgs[i]} className={"pointer-events-none -mt-24 h-96 w-96 rounded-lg shadow-lg  " + state.shadowColor}></img>
+          <img src={Cityimgs[i]} className={"-mt-24 h-96 w-96 rounded-lg shadow-lg  " + state.shadowColor}></img>
           <h1 className='font-Cairo text-sm md:text-xl font-extrabold text-center mt-1 text-[#48cae4]'>{name}</h1>
         </div>
       </div>

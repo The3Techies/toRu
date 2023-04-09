@@ -42,7 +42,7 @@ const DescCity: React.FC<MyComponentProps> = ({ Cityname }) => {
 
     return (
         <div >
-            <div className='w-full mt-8 flex justify-center '>
+            <div className='w-full mt-6 flex justify-center '>
                 <div className={'w-full max-w-6xl rounded-2xl shadow-lg mx-2 text-right flex flex-col gap-4 p-8 text-sm md:text-base ' + state.bgColor + state.shadowColor}>
                     {infoHtml}
                 </div>

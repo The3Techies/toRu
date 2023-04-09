@@ -21,7 +21,7 @@ const CitiesHero = () => {
 
     useEffect(() => {
         setShouldRunEffect(false)
-        const id = setInterval(() => {
+        const id:any = setInterval(() => {
             if (index < names.length - 1) index++
             else index = 0
             setImg(imgs[index])
