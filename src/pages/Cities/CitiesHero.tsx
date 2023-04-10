@@ -27,7 +27,7 @@ const CitiesHero = () => {
             setImg(imgs[index])
             setName(names[index])
             setActive(index)
-        }, 3000);
+        }, 2000);
         setIntervalId(id)
         return () => clearInterval(id);
     }, [shouldRunEffect]);
@@ -46,9 +46,9 @@ const CitiesHero = () => {
 
     return (
         <div>
-            <div className="w-full mt-[3.5rem] flex justify-center ">
+            <div className="w-full mt-[3.5rem] flex justify-center">
                 <div className=" w-full max-w-6xl">
-                    <img src={img} className="w-full  h-[27rem] opacity-25 select-none pointer-events-none " />
+                    <div className="select-none "><img src={img} className="w-full  h-[27rem] opacity-25" /></div>
                     <div className="flex justify-center">
                         <p className={"font-Cairo absolute top-[15rem] md:w-96 text-center " + state.fontColor}>واحدة من مؤسسات التعليم العالي الرائدة في روسيا وتمثل مجمعًا علميًا وتعليميًا كبيرًا. هناك 18 مجالًا للدراسة  و 40 برنامجًا في كلياتها السبع (بدوام كامل وعن طريق المراسلة)</p>
                     </div>

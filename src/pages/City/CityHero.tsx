@@ -31,8 +31,8 @@ const CityHero: React.FC<MyComponentProps> = ({ Cityname }) => {
     }
 
     return (
-        <div className=" mt-[3.5rem] w-full h-fit flex justify-center items-center">
-            <video width="100%" height="100vh" className="appearance-none controls-none poster-none object-cover relative transition-opacity  " loop muted autoPlay>
+        <div className=" mt-[3.5rem] w-full h-fit flex justify-center items-center select-none ">
+            <video width="100%" height="100vh" className="appearance-none controls-none poster-none object-cover relative transition-opacity  " loop muted autoPlay >
                 <source src={video} type="video/mp4" />
             </video>
         </div>

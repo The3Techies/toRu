@@ -128,16 +128,16 @@ const TopUnivers: React.FC<MyComponentProps> = ({ Cityname }) => {
   }
   const CityUniversitiesHtml: Array<JSX.Element> = CityUniversities.map(({ name, infos, link }, i) => {
     return (
-      <div key={i} className={'w-full max-w-6xl h-96 rounded-br-3xl shadow-lg py-8 text-right flex mt-28  ' + state.bgApp + state.shadowColor + (i === 0 || i % 2 === 0 ? "flex-row-reverse" : " ")}>
-        <div className='w-2/3'>
+      <div key={i} className={'w-full max-w-6xl md:h-96 rounded-br-3xl shadow-lg py-8 text-right flex-col-reverse justify-end flex mt-10 md:mt-28  ' + state.bgApp + state.shadowColor + (i === 0 || i % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row")}>
+        <div className='md:w-2/3'>
           {infos.map((info:string , i:number )=>{
-            return <p key={i} className={'font-Cairo text-sm md:text-base text-right mx-8 my-2 ' + state.fontColor}>{info}</p>
+            return <p key={i} className={'font-Cairo text-xs md:text-base text-right mx-8 my-2 ' + state.fontColor}>{info}</p>
           })}
           <a className='font-Cairo text-sm md:text-base text-center mx-8 text-[#48cae4] font-bold underline ' target="_blank" href={link}>موقح الجامعة</a>
         </div>
         <div >
-          <img src={Cityimgs[i]} className={"-mt-24 h-96 w-96 rounded-lg shadow-lg  " + state.shadowColor}></img>
-          <h1 className='font-Cairo text-sm md:text-xl font-extrabold text-center mt-1 text-[#48cae4]'>{name}</h1>
+          <div className='select-none'><img src={Cityimgs[i]} className={"hidden md:block -mt-24 h-96 w-96 rounded-lg shadow-lg  " + state.shadowColor}></img></div>
+          <h1 className={'font-Cairo text-sm md:text-xl font-extrabold text-center mt-1 ' +state.fontColor} >{name}</h1>
         </div>
       </div>
     )
@@ -149,9 +149,9 @@ const TopUnivers: React.FC<MyComponentProps> = ({ Cityname }) => {
         <div className={"w-full max-w-6xl p-8 rounded-2xl shadow-lg flex flex-col justify-center items-center mx-2  " + state.bgColor + state.shadowColor}>
 
           <div className='flex justify-center mb-2'>
-            <div className={'h-px w-6 mt-4 mr-1 ' + (state.dark ? "bg-[#FFFFFF] " : "bg-[#214966] ")} ></div>
-            <h1 className={'font-Cairo md:text-xl font-extrabold text-center ' + state.fontColor}>اشهر الجامعات في المدينة</h1>
-            <div className={'h-px w-6 mt-4 mr-1 ' + (state.dark ? "bg-[#FFFFFF] " : "bg-[#214966] ")} ></div>
+            <div className={'h-px w-6 mt-3 md:mt-4 mr-1 ' + (state.dark ? "bg-[#FFFFFF] " : "bg-[#214966] ")} ></div>
+            <h1 className={'font-Cairo md:text-xl text-sm font-extrabold text-center ' + state.fontColor}>اشهر الجامعات في المدينة</h1>
+            <div className={'h-px w-6 mt-3 md:mt-4 mr-1 ' + (state.dark ? "bg-[#FFFFFF] " : "bg-[#214966] ")} ></div>
           </div>
 
           {CityUniversitiesHtml}
