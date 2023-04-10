@@ -20,22 +20,25 @@ const CitiesHero = () => {
     const [shouldRunEffect, setShouldRunEffect] = useState(false);
 
     useEffect(() => {
+        index = active
         setShouldRunEffect(false)
-        const id:any = setInterval(() => {
+        const id: any = setInterval(() => {
             if (index < names.length - 1) index++
             else index = 0
             setImg(imgs[index])
             setName(names[index])
             setActive(index)
-        }, 2000);
+
+        }, 3000);
         setIntervalId(id)
         return () => clearInterval(id);
     }, [shouldRunEffect]);
 
     function changeActive(i: number) {
         if (intervalId) {
+            
             clearInterval(intervalId);
-            setIntervalId(null);
+            setIntervalId(null)
             setShouldRunEffect(true)
         }
         index = i
