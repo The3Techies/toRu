@@ -1,6 +1,6 @@
 import MyComponentProps from './MyComponentProps'
 import { useMyContext } from "../../State/MyContext"
-import imgs from './img'
+import imgs from './TopUniversImgs'
 
 const TopUnivers: React.FC<MyComponentProps> = ({ Cityname }) => {
   const { state } = useMyContext()
@@ -155,10 +155,11 @@ const TopUnivers: React.FC<MyComponentProps> = ({ Cityname }) => {
           </div>
 
           {CityUniversitiesHtml}
+
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default TopUnivers
