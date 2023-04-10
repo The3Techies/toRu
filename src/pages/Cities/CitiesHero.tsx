@@ -53,7 +53,7 @@ const CitiesHero = () => {
                 <div className=" w-full max-w-6xl">
                     <div className="select-none "><img src={img} className="w-full  h-[27rem] opacity-25" /></div>
                     <div className="flex justify-center">
-                        <p className={"font-Cairo absolute top-[15rem] md:w-96 text-center " + state.fontColor}>واحدة من مؤسسات التعليم العالي الرائدة في روسيا وتمثل مجمعًا علميًا وتعليميًا كبيرًا. هناك 18 مجالًا للدراسة  و 40 برنامجًا في كلياتها السبع (بدوام كامل وعن طريق المراسلة)</p>
+                        <p className={"font-Cairo absolute top-[10rem] md:w-[35rem] text-center md:text-lg text-sm p-4  " + state.fontColor}>نحن نقدم خدمات الدعوة للطلاب المهتمين بالدراسة في أي مدينة في روسيا. ومع ذلك ، فإن المدن الأكثر شعبية بين الطلاب الدوليين هي <span className="font-extrabold" >موسكو ، وسانت بطرسبرغ ، وأوفا ، وروستوف ، وكازان. </span>يمكننا مساعدتك في العثور على الخيار المثالي للمدينة والجامعة التي ترغب في الدراسة فيها. دعنا نجعل أحلامك الدراسية في الخارج تتحقق! 🎓</p>
                     </div>
                     <div className="flex justify-end">
                         <h1 className={"font-Cairo absolute top-[24rem] font-bold md:font-extrabold mr-2 md:mr-20 text-lg md:text-xl text-[#48cae4]"}>{name}</h1>
