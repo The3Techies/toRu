@@ -2,6 +2,7 @@ import { useMyContext } from "../../State/MyContext";
 import whatsappIcon from '../../assets/imgHome/whatsappIcon.png'
 import telegramIcon from '../../assets/imgHome/telegramIcon.png'
 import emailIcon from '../../assets/imgHome/emailIcon.png'
+import InstagramIcon from "../../assets/imgHome/InstagramIcon.png"
 
 export default function ApplyHero() {
     const { state } = useMyContext()
@@ -21,7 +22,11 @@ export default function ApplyHero() {
             name: 'ايميل',
             info: 'ssiacam@gmail.com',
             icon: emailIcon
-        }
+        },{
+            name: "انستاقرام",
+            info: "@fdsfdsfds",
+            icon: InstagramIcon,
+          },
     ]
     const ContactsHtml: Array<JSX.Element> = Contacts.map(({ name, info, icon }, i) => {
         return (
