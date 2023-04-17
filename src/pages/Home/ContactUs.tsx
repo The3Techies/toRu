@@ -1,25 +1,14 @@
-import { useState } from "react";
 import { useMyContext } from "../../State/MyContext";
 import whatsappIcon from "../../assets/imgHome/whatsappIcon.png";
 import telegramIcon from "../../assets/imgHome/telegramIcon.png";
 import emailIcon from "../../assets/imgHome/emailIcon.png";
+import InstagramIcon from "../../assets/imgHome/InstagramIcon.png";
+
+
 
 const ContactUs = () => {
   const { state } = useMyContext();
-  const [inputName, SetInputName] = useState<string>("");
-  const [inputNameBorder, SetInputNameBoredr] = useState<string>(
-    state.borderColer
-  );
-  const [inputEmail, SetInputEmail] = useState<string>("");
-  const [inputEmailBorder, SetInputEmailBorder] = useState<string>(
-    state.borderColer
-  );
-  const [inputMessage, SetInputMessage] = useState<string>("");
-  const [inputMessageBorder, SetInputMessageBorder] = useState<string>(
-    state.borderColer
-  );
-  const [btnText, setBtnText] = useState<string>("ارسل");
-
+ 
   const Contacts = [
     {
       name: "واتساب",
@@ -33,14 +22,21 @@ const ContactUs = () => {
     },
     {
       name: "ايميل",
-      info: "ssiacam@gmail.com",
+      info: "torussiacampany@gmail.com",
       icon: emailIcon,
     },
+    {
+      name: "انستاقرام",
+      info: "@fdsfdsfds",
+      icon: InstagramIcon,
+    },
+    
   ];
+
   const ContactsHtml: Array<JSX.Element> = Contacts.map(
     ({ name, info, icon }, i) => {
       return (
-        <div key={i} className="flex mb-10 cursor-pointer">
+        <div key={i} className="flex mb-10 cursor-pointer ">
           <div>
             <h1
               className={"font-Cairo  font-bold text-right " + state.fontColor}
@@ -55,7 +51,7 @@ const ContactUs = () => {
               {info}
             </p>
           </div>
-          <img src={icon} className="w-12 h-12 ml-4" />
+          <img src={icon} className="w-12 h-12 ml-2" />
         </div>
       );
     }
@@ -99,7 +95,7 @@ const ContactUs = () => {
           </div>
 
           <div className="flex flex-col-reverse md:flex-row justify-center w-full ">
-            <div className="flex flex-col md:flex-row-reverse justify-center md:gap-10 items-end mt-12 md:max-w-1/3">
+            <div className="flex flex-col md:flex-row-reverse justify-center md:gap-10 items-end mt-12 md:max-w-1/3 flex-wrap">
               {ContactsHtml}
             </div>
           </div>
