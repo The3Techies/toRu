@@ -43,9 +43,9 @@ const OurService = () => {
                 <div className={'shadow-lg rounded-2xl w-full max-w-6xl my-4 md:my-0 py-6 flex flex-col justify-center items-center mx-2 ' + state.bgColor + state.shadowColor} >
                     <div >
                         <div className='flex justify-center mb-2 '>
-                            <div className={'h-px w-6 mt-4 mr-1 ' + (state.dark ? "bg-[#FFFFFF] " : "bg-[#214966] ")} ></div>
+                            <div className={'h-px w-6 mt-4 mr-1 select-none ' + (state.dark ? "bg-[#FFFFFF] " : "bg-[#214966] ")} ></div>
                             <p className={'font-Cairo text-base ' + state.fontColor}>الخدمات</p>
-                            <div className={'h-px w-6 mt-4 mr-1 ' + (state.dark ? "bg-[#FFFFFF] " : "bg-[#214966] ")} ></div>
+                            <div className={'h-px w-6 mt-4 mr-1 select-none ' + (state.dark ? "bg-[#FFFFFF] " : "bg-[#214966] ")} ></div>
                         </div>
                         <h1 className={'font-Cairo md:text-xl font-extrabold text-center ' + state.fontColor}>ماذا نستطيع أن نقدم لك</h1>
                         <h1 className={'font-Cairo md:text-2xl font-black text-center ' + state.fontColor}>500$</h1>
