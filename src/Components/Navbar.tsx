@@ -37,17 +37,16 @@ export default function Navbar() {
     return (
         <div className={"fixed top-0 left-0 right-0 w-full flex justify-center  hover:opacity-100 z-50 " + state.bgColor}>
             <div className=" w-full max-w-6xl h-14  bg-opacity-50  flex justify-between items-center select-none ">
-                <div className="hidden md:flex  justify-between ml-7"  >
-                    {state.dark ? <BsToggleOff className="text-[#FFFFFF] text-2xl cursor-pointer" onClick={SetToLight} /> : <BsToggleOn className="text-[#214966] text-2xl cursor-pointer" onClick={SetToDark} />}
-                    <h1 className={btnfontStyle + (useLocation().pathname === "/Apply" ? ' font-extrabold' : '')} onClick={() => navigate("/Apply")} >قدم الان</h1>
-                    <h1 className={btnfontStyle + (useLocation().pathname === "/Cities" ? ' font-extrabold' : '')} onClick={() => navigate("/Cities")}>المدن</h1>
-                    <h1 className={btnfontStyle + (useLocation().pathname === "/WhyRussia" ? ' font-extrabold' : '')} onClick={() => navigate("/WhyRussia")}>لماذا روسيا</h1>
+                <div className="hidden md:flex  justify-between mr-7"  >
                     <h1 className={btnfontStyle + (useLocation().pathname === "/" ? ' font-extrabold' : '')} onClick={() => navigate("/")}>الرئيسية</h1>
+                    <h1 className={btnfontStyle + (useLocation().pathname === "/WhyRussia" ? ' font-extrabold' : '')} onClick={() => navigate("/WhyRussia")}>لماذا روسيا</h1>
+                    <h1 className={btnfontStyle + (useLocation().pathname === "/Cities" ? ' font-extrabold' : '')} onClick={() => navigate("/Cities")}>المدن</h1>
+                    <h1 className={btnfontStyle + (useLocation().pathname === "/Apply" ? ' font-extrabold' : '')} onClick={() => navigate("/Apply")} >قدم الان</h1>
                 </div>
                 <div className="md:hidden ">
                     <div className="flex justify-center items-center">
                         {openMenu ? <MdClose className={"w-10 h-10 mx-4 " + state.fontColor} onClick={() => setOpenMenu(!openMenu)} /> : <BiMenuAltLeft className={"w-10 h-10 mx-4 " + state.fontColor} onClick={() => setOpenMenu(!openMenu)} />}
-                        {state.dark ? <BsToggleOff className="text-[#FFFFFF] text-2xl cursor-pointer "  onClick={SetToLight} /> : <BsToggleOn className="text-[#214966] text-2xl cursor-pointer" onClick={SetToDark} />}
+                        {/* {state.dark ? <BsToggleOff className="text-[#FFFFFF] text-2xl cursor-pointer "  onClick={SetToLight} /> : <BsToggleOn className="text-[#214966] text-2xl cursor-pointer" onClick={SetToDark} />} */}
                     </div>
                     <ul className={"mt-1 w-28  " + (openMenu ? 'absolute ' : ' hidden ') + state.bgColor}>
                         <li><h1 className={btnfontStyle + " mr-2 text-right  " + (useLocation().pathname === "/" ? 'font-extrabold' : '')} onClick={() => navigate("/")}>الرئيسية</h1></li>
@@ -56,14 +55,18 @@ export default function Navbar() {
                         <li><h1 className={btnfontStyle + " mt-3 mb-4 text-right mr-2 " + (useLocation().pathname === "/Apply" ? 'font-extrabold' : '')} onClick={() => navigate("/Apply")}>قدم الان</h1></li>
                     </ul>
                 </div>
-                <div className="flex mt-3 cursor-pointer" onClick={() => navigate("/")}>
+                <div className="flex justify-center">
+                {state.dark ? <BsToggleOff className="text-[#FFFFFF] text-2xl cursor-pointer mt-3" onClick={SetToLight} /> : <BsToggleOn className="text-[#214966] text-2xl cursor-pointer mt-3" onClick={SetToDark} />}
+                <div className="flex cursor-pointer " onClick={() => navigate("/")}>
                     <div className='mr-4' >
                         <h1 className={"font-Cairo text-xl md:text-2xl font-bold whitespace-nowrap " + state.fontColor}>إلى روسيا</h1>
-                        <p className={"font-Cairo text-xs ml-1.5 font-thin " + state.fontColor}>للخدمات الطلابية</p>
+                        <p className={"font-Cairo text-xs ml-1.5 font-thin text-center " + state.fontColor}>للخدمات الطلابية</p>
                     </div>
-                    <div>
+                    {/* <div>
                         <img src={logo} alt="Our Logo" className='w-16 h-16 min-w-fit min-h-fit ' />
-                    </div>
+                    </div> */}
+                    
+                </div>
                 </div>
             </div>
         </div>

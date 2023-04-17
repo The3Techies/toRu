@@ -33,6 +33,7 @@ const ContactUs = () => {
     
   ];
 
+
   const ContactsHtml: Array<JSX.Element> = Contacts.map(
     ({ name, info, icon }, i) => {
       return (
@@ -94,10 +95,12 @@ const ContactUs = () => {
             </h1>
           </div>
 
+
           <div className="flex flex-col-reverse md:flex-row justify-center w-full ">
             <div className="flex flex-col md:flex-row-reverse justify-center md:gap-10 items-end mt-12 md:max-w-1/3 flex-wrap">
               {ContactsHtml}
             </div>
+
           </div>
         </div>
       </div>

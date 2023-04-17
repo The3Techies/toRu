@@ -11,7 +11,7 @@ import Yekaterinburg from '../../assets/imgCities/Yekaterinburg.jpg'
 const CitiesHero = () => {
     const { state } = useMyContext()
     let index: number = 0
-    const names: Array<string> = ["Moscow", "St Petersburg", "Ufa", "Kazan", "Rostov", "Yekaterinburg"]
+    const names: Array<string> = ["موسكو", "سانت بطرسبرغ", "أوفا", "كازان", "روستوف", "يكاترينبورغ"]
     const imgs: Array<string> = [Moscow, StPetersburg, Ufa, Kazan, Rostov, Yekaterinburg]
     const [img, setImg] = useState<string>(imgs[index])
     const [name, setName] = useState<string>(names[index])
@@ -55,8 +55,8 @@ const CitiesHero = () => {
                     <div className="flex justify-center">
                         <p className={"font-Cairo absolute top-[10rem] md:w-[35rem] text-center md:text-lg text-sm p-4  " + state.fontColor}>نحن نقدم خدمات الدعوة للطلاب المهتمين بالدراسة في أي مدينة في روسيا. ومع ذلك ، فإن المدن الأكثر شعبية بين الطلاب الدوليين هي <span className="font-extrabold" >موسكو ، وسانت بطرسبرغ ، وأوفا ، وروستوف ، وكازان. </span>يمكننا مساعدتك في العثور على الخيار المثالي للمدينة والجامعة التي ترغب في الدراسة فيها. دعنا نجعل أحلامك الدراسية في الخارج تتحقق! 🎓</p>
                     </div>
-                    <div className="flex justify-end">
-                        <h1 className={"font-Cairo absolute top-[24rem] font-bold md:font-extrabold mr-2 md:mr-20 text-lg md:text-xl text-[#48cae4]"}>{name}</h1>
+                    <div className="flex justify-start">
+                        <h1 className={"font-Cairo absolute top-[24rem] font-bold md:font-extrabold mr-2 md:mr-20 text-lg md:text-xl text-[#48cae4] "}>{name}</h1>
                     </div>
                     <div className="flex justify-center ">
                         <div className={"absolute top-[26rem] flex justify-center text-4xl cursor-pointer " + state.fontColor}>
