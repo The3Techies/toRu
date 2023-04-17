@@ -29,6 +29,12 @@ module.exports = {
         '12': '12',
         '13': '13',
       },
+      utilities: {
+        'ltr': {
+          'direction': 'ltr',
+          'unicode-bidi': 'bidi-override',
+        },
+      },
     },
   }
 }
