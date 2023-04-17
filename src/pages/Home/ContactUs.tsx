@@ -31,11 +31,11 @@ const ContactUs = () => {
   const ContactsHtml: Array<JSX.Element> = Contacts.map(({ name, info, icon }, i) => {
     return (
       <div key={i} className="flex mb-10 cursor-pointer">
+        <img src={icon} className="w-12 h-12 ml-4" />
         <div>
           <h1 className={'font-Cairo  font-bold text-right ' + state.fontColor}>{name}</h1>
           <p className={'font-Cairo text-right mt-1 select-text ' + state.fontColor}>{info}</p>
         </div>
-        <img src={icon} className="w-12 h-12 ml-4" />
       </div>
     )
   })
@@ -58,7 +58,10 @@ const ContactUs = () => {
             <h1 className={'font-Cairo md:text-2xl font-extrabold ' + state.fontColor}>هل لديك اي اسئلة أو استفسار؟</h1>
           </div>
 
-          <div className="flex flex-col-reverse md:flex-row justify-center  w-full mt-10 ">
+          <div className="flex flex-col md:flex-row justify-center  w-full mt-10 ">
+            <div className="flex flex-col justify-center items-start m-4 md:m-0 md:max-w-1/3">
+              {ContactsHtml}
+            </div>
 
             <div className=" flex flex-col md:mr-12 mx-3 mb-8 md:mb-0 md:w-1/3">
               <input placeholder="الإسم" type='text' value={name} onChange={(event) => { SetName(event.target.value); }} className={'font-Cairo border-2 rounded-md h-10  text-right px-5 text-sm ' + state.bgColor + state.fontColor + state.borderColer} ></input>
@@ -67,9 +70,6 @@ const ContactUs = () => {
               <button onClick={handleSubmit} className={'font-Cairo font-bold mt-3 text-lg rounded-md border-2 hover:shadow-lg ' + state.borderColer + (state.dark ? "text-[#161616] bg-[#FFFFFF] hover:shadow-[#e0e0e0] " : "text-[#FFFFFF] bg-[#214966] hover:shadow-[#94d3e0] ")}>ارسل</button>
             </div>
 
-            <div className="flex flex-col justify-center items-end m-4 md:m-0 md:max-w-1/3">
-              {ContactsHtml}
-            </div>
 
           </div>
         </div>

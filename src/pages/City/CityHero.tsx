@@ -10,22 +10,22 @@ const CityHero: React.FC<MyComponentProps> = ({ Cityname }) => {
 
     let video 
     switch (Cityname) {
-        case "Moscow":
+        case "موسكو":
             video = MoscowVid
             break
-        case "St Petersburg":
+        case "سانت بطرسبرغ":
             video = StPetersburgVid
             break
-        case "Ufa":
+        case "أوفا":
             video = UfaVid
             break
-        case "Kazan":
+        case "كازان":
             video = KazanVid
             break
-        case "Rostov":
+        case "روستوف":
             video = RostovVid
             break
-        case "Yekaterinburg":
+        case "يكاترينبورغ":
             video = YekaterinburgVid
             break
     }
