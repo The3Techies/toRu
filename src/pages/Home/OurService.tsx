@@ -48,7 +48,7 @@ const OurService = () => {
                             <div className={'h-px w-6 mt-4 mr-1 select-none ' + (state.dark ? "bg-[#FFFFFF] " : "bg-[#214966] ")} ></div>
                         </div>
                         <h1 className={'font-Cairo md:text-xl font-extrabold text-center ' + state.fontColor}>ماذا نستطيع أن نقدم لك</h1>
-                        <h1 className={'font-Cairo md:text-2xl font-black text-center ' + state.fontColor}>500$</h1>
+                        <h1 className={'font-Cairo md:text-2xl font-black text-center ' + state.fontColor}>مقابل <span className="text-blue-600">500$</span> فقط</h1>
 
                     </div>
                     <div className='flex md:flex-row-reverse flex-col mt-10 justify-around  ' >

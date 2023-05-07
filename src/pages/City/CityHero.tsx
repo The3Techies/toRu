@@ -1,6 +1,6 @@
 import MyComponentProps from './MyComponentProps'
 import MoscowVid from '../../assets/imgCity/CityVideos/vid.mp4'
-import StPetersburgVid from '../../assets/imgCity/CityVideos/vid.mp4'
+import StPetersburgVid from '../../assets/imgCity/CityVideos/Saint Petersburg.mp4'
 import UfaVid from '../../assets/imgCity/CityVideos/vid.mp4'
 import KazanVid from '../../assets/imgCity/CityVideos/vid.mp4'
 import RostovVid from '../../assets/imgCity/CityVideos/vid.mp4'
