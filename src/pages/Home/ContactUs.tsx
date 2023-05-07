@@ -37,8 +37,8 @@ const ContactUs = () => {
   const ContactsHtml: Array<JSX.Element> = Contacts.map(
     ({ name, info, icon }, i) => {
       return (
-        <div key={i} className="flex mb-10 cursor-pointer ">
-          <div>
+        <div key={i} className="flex mb-10 cursor-pointer flex-row-reverse ">
+          <div >
             <h1
               className={"font-Cairo  font-bold text-right " + state.fontColor}
             >
@@ -52,7 +52,7 @@ const ContactUs = () => {
               {info}
             </p>
           </div>
-          <img src={icon} className="w-12 h-12 ml-2" />
+          <img src={icon} className="w-12 h-12 ml-2 " />
         </div>
       );
     }

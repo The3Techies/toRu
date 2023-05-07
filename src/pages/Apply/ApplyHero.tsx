@@ -30,7 +30,7 @@ export default function ApplyHero() {
     ]
     const ContactsHtml: Array<JSX.Element> = Contacts.map(({ name, info, icon }, i) => {
         return (
-            <div key={i} className="flex mb-10 cursor-pointer" >
+            <div key={i} className="flex mb-10 cursor-pointer flex-row-reverse" >
                 <div>
                     <h1 className={'font-Cairo  font-bold text-right ' + state.fontColor}>{name}</h1>
                     <p className={'font-Cairo text-right mt-1 select-text ' + state.fontColor}>{info}</p>
