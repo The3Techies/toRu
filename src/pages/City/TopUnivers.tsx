@@ -115,27 +115,27 @@ const TopUnivers: React.FC<MyComponentProps> = ({ Cityname }) => {
   let Cityimgs: Array<string> = []
   let CityUniversities: Array<any> = []
   switch (Cityname) {
-    case "موسكو":
+    case "Moscow":
       CityUniversities = MoscowUniversities
       Cityimgs = imgs.Moscow
       break
-    case "سانت بطرسبرغ":
+    case "St Petersburg":
       CityUniversities = StPetersburgUniversities
       Cityimgs = imgs.StPetersburg
       break
-    case "أوفا":
+    case "Ufa":
       CityUniversities = UfaUniversities
       Cityimgs = imgs.Ufa
       break
-    case "كازان":
+    case "Kazan":
       CityUniversities = KazanUniversities
       Cityimgs = imgs.Kazan
       break
-    case "روستوف":
+    case "Rostov":
       CityUniversities = RostovUniversities
       Cityimgs = imgs.Rostov
       break
-    case "يكاترينبورغ":
+    case "Yekaterinburg":
       CityUniversities = YekaterinburgUniversities
       Cityimgs = imgs.Yekaterinburg
       break
