@@ -10,29 +10,29 @@ const CityHero: React.FC<MyComponentProps> = ({ Cityname }) => {
 
     let video 
     switch (Cityname) {
-        case "موسكو":
+        case "Moscow":
             video = MoscowVid
             break
-        case "سانت بطرسبرغ":
+        case "St Petersburg":
             video = StPetersburgVid
             break
-        case "أوفا":
+        case "Ufa":
             video = UfaVid
             break
-        case "كازان":
+        case "Kazan":
             video = KazanVid
             break
-        case "روستوف":
+        case "Rostov":
             video = RostovVid
             break
-        case "يكاترينبورغ":
+        case "Yekaterinburg":
             video = YekaterinburgVid
             break
     }
 
     return (
         <div className=" mt-[3.5rem] w-full h-fit flex justify-center items-center select-none ">
-            <video width="100%" height="100vh" className="appearance-none controls-none poster-none object-cover relative transition-opacity  " loop muted autoPlay >
+            <video width="100%" height="100vh" className="appearance-none controls-none poster-none object-cover relative transition-opacity " loop muted autoPlay >
                 <source src={video} type="video/mp4" />
             </video>
         </div>

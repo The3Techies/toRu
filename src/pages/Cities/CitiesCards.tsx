@@ -14,37 +14,43 @@ const CitiesCards = () => {
     const arry = [
         {
             name: "موسكو",
+            urlName: "Moscow",
             img: Moscow,
         },
         {
             name: "سانت بطرسبرغ",
+            urlName: "St Petersburg",
             img: StPetersburg,
         },
         {
             name: "أوفا",
+            urlName: "Ufa",
             img: Ufa,
         },
         {
             name: "كازان",
+            urlName: "Kazan",
             img: Kazan,
         },
         {
             name: "روستوف",
+            urlName: "Rostov",
             img: Rostov,
         },
         {
             name: "يكاترينبورغ",
+            urlName: "Yekaterinburg",
             img: Yekaterinburg,
         },
     ]
 
-    const CitsCards: Array<JSX.Element> = arry.map(({ name, img }, i) => {
+    const CitsCards: Array<JSX.Element> = arry.map(({ name,urlName , img }, i) => {
         return (
-            <div key={i} className={"w-60 h-80 flex justify-center items-center rounded-2xl shadow-lg cursor-pointer  " + state.bgApp + state.shadowColor} onClick={() => navigate(`/City/${name}`)} >
+            <div key={i} className={"w-60 h-80 flex justify-center items-center rounded-2xl shadow-lg cursor-pointer  " + state.bgApp + state.shadowColor} onClick={() => navigate(`/City/${urlName}`)} >
                 <div className="flex flex-col  items-center justify-center w-48 h-full -mt-2 ">
                     <div className="select-none"><img src={img} className=" h-48 rounded-lg opacity-60 "></img></div>
                     <h1 className={"font-Cairo font-bold text-2xl self-start " + state.fontColor}>{name}</h1>
-                    <p className="font-Cairo text-sky-400 hover:text-sky-800 text-lg self-start cursor-pointer " onClick={() => navigate(`/City/${name}`)}>اعرف المزيد</p>
+                    <p className="font-Cairo text-sky-400 hover:text-sky-800 text-lg self-start cursor-pointer " onClick={() => navigate(`/City/${urlName}`)}>اعرف المزيد</p>
                 </div>
             </div>
         )
