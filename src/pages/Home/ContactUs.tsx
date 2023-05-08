@@ -37,8 +37,8 @@ const ContactUs = () => {
   const ContactsHtml: Array<JSX.Element> = Contacts.map(
     ({ name, info, icon }, i) => {
       return (
-        <div key={i} className="flex mb-10 cursor-pointer flex-row-reverse ">
-          <div >
+        <div key={i} className="flex mb-10 cursor-pointer flex-row-reverse self-start mr-5">
+          <div className="mr-2">
             <h1
               className={"font-Cairo  font-bold text-right " + state.fontColor}
             >
