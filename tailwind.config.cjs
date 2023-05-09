@@ -18,8 +18,8 @@ module.exports = {
         '47rem': '47rem',
       },
       backgroundImage: {
-        'WhyRussia-hero': "url('./assets/imgWhyRussia/hero.png')",
-        'WhyRussia-heroSS': "url('./assets/imgWhyRussia/heroSS.png')"
+        'WhyRussia-hero': "url('./assets/imgWhyRussia/hero.webp')",
+        'WhyRussia-heroSS': "url('./assets/imgWhyRussia/heroSS.webp')"
       },
       gridRowStart: {
         '8': '8',
