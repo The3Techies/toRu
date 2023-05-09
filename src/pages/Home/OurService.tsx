@@ -31,7 +31,7 @@ const OurService = () => {
     const WhyUS: Array<JSX.Element> = arry.map(({ logo, title, par }, i) => {
         return (
             <div key={i} className='flex flex-col items-center md:w-1/5 m-4 md:m-0 '>
-                <img src={logo} className="select-none w-14 h-14 rounded-full " />
+                <img src={logo} alt="OurServiceLogo" className="select-none w-14 h-14 rounded-full " />
                 <h1 className={'font-Cairo mt-4 text-xl text-center ' + state.fontColor}>{title}</h1>
                 <p className={'font-Cairo text-14px leading-relaxed mt-2 text-center font-light ' + state.fontColor}>{par}</p>
             </div>)
