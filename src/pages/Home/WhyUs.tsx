@@ -1,7 +1,7 @@
 import { useMyContext } from "../../State/MyContext";
-import logoPath1 from '../../assets/imgHome/WhyUsLogo1.png'
-import logoPath2 from '../../assets/imgHome/WhyUsLogo2.png'
-import logoPath3 from '../../assets/imgHome/WhyUsLogo3.png'
+import logoPath1 from '../../assets/imgHome/WhyUsLogo1.webp'
+import logoPath2 from '../../assets/imgHome/WhyUsLogo2.webp'
+import logoPath3 from '../../assets/imgHome/WhyUsLogo3.webp'
 
 const WhyUs = () => {
     const { state } = useMyContext();

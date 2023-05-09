@@ -1,8 +1,8 @@
 import { useMyContext } from "../../State/MyContext";
-import whatsappIcon from "../../assets/imgHome/whatsappIcon.png";
-import telegramIcon from "../../assets/imgHome/telegramIcon.png";
-import emailIcon from "../../assets/imgHome/emailIcon.png";
-import InstagramIcon from "../../assets/imgHome/InstagramIcon.png";
+import whatsappIcon from "../../assets/imgHome/whatsappIcon.webp";
+import telegramIcon from "../../assets/imgHome/telegramIcon.webp";
+import emailIcon from "../../assets/imgHome/emailIcon.webp";
+import InstagramIcon from "../../assets/imgHome/InstagramIcon.webp";
 
 
 
@@ -52,7 +52,7 @@ const ContactUs = () => {
               {info}
             </p>
           </div>
-          <img src={icon} className="w-12 h-12 ml-2 " />
+          <img src={icon} alt="icon" className="w-12 h-12 ml-2 " />
         </div>
       );
     }
