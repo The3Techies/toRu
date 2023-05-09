@@ -48,7 +48,7 @@ const CitiesCards = () => {
         return (
             <div key={i} className={"w-60 h-80 flex justify-center items-center rounded-2xl shadow-lg cursor-pointer  " + state.bgApp + state.shadowColor} onClick={() => navigate(`/City/${urlName}`)} >
                 <div className="flex flex-col  items-center justify-center w-48 h-full -mt-2 ">
-                    <div className="select-none"><img src={img} alt="CityImg" className=" h-48  rounded-lg opacity-60 "></img></div>
+                    <div className="select-none"><img src={img} alt="CityImg" className=" h-48 w-48 rounded-lg opacity-60 "></img></div>
                     <h1 className={"font-Cairo font-bold text-2xl self-start " + state.fontColor}>{name}</h1>
                     <p className="font-Cairo text-sky-400 hover:text-sky-800 text-lg self-start cursor-pointer " onClick={() => navigate(`/City/${urlName}`)}>اعرف المزيد</p>
                 </div>

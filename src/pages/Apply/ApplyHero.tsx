@@ -35,7 +35,7 @@ export default function ApplyHero() {
                     <h1 className={'font-Cairo  font-bold text-right ' + state.fontColor}>{name}</h1>
                     <p className={'font-Cairo text-right mt-1 select-text ' + state.fontColor}>{info}</p>
                 </div>
-                <img src={icon} className="w-12 h-12 ml-4" />
+                <img src={icon} alt="Icon" className="w-12 h-12 ml-4" />
             </div>
         )
     })

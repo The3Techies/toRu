@@ -13,6 +13,7 @@ export default function Form() {
         }
       >
         <iframe
+          title="google form"
           className="w-full h-96 "
           src="https://docs.google.com/forms/d/e/1FAIpQLScj3IW8SyBukdyogKKmkaxNpTz826E81hpxxkmzANKXI5dW3g/viewform?embedded=true"
         ></iframe>
