@@ -1,12 +1,12 @@
 import { useMyContext } from "../../State/MyContext";
 import { useState, useEffect } from 'react';
 import { RxDot, RxDotFilled } from 'react-icons/rx';
-import Moscow from '../../assets/imgCities/Moscow.jpg'
-import StPetersburg from '../../assets/imgCities/SaintPetersburg.jpg'
-import Ufa from '../../assets/imgCities/Ufa.jpg'
-import Kazan from '../../assets/imgCities/Kazan.jpg'
-import Rostov from '../../assets/imgCities/Rostov.jpg'
-import Yekaterinburg from '../../assets/imgCities/Yekaterinburg.jpg'
+import Moscow from '../../assets/imgCities/Moscow.webp'
+import StPetersburg from '../../assets/imgCities/SaintPetersburg.webp'
+import Ufa from '../../assets/imgCities/Ufa.webp'
+import Kazan from '../../assets/imgCities/Kazan.webp'
+import Rostov from '../../assets/imgCities/Rostov.webp'
+import Yekaterinburg from '../../assets/imgCities/Yekaterinburg.webp'
 
 const CitiesHero = () => {
     const { state } = useMyContext()
@@ -51,7 +51,7 @@ const CitiesHero = () => {
         <div>
             <div className="w-full mt-[3.5rem] flex justify-center">
                 <div className=" w-full max-w-6xl">
-                    <div className="select-none "><img src={img} className="w-full  h-[27rem] opacity-25" /></div>
+                    <div className="select-none "><img src={img} alt="CityImg" className="w-full  h-[27rem] opacity-25" /></div>
                     <div className="flex justify-center">
                         <p className={"font-Cairo absolute top-[10rem] md:w-[35rem] text-center md:text-lg text-sm p-4  " + state.fontColor}>نحن نقدم خدمات الدعوة للطلاب المهتمين بالدراسة في أي مدينة في روسيا. ومع ذلك ، فإن المدن الأكثر شعبية بين الطلاب الدوليين هي <span className="font-extrabold" >موسكو ، وسانت بطرسبرغ ، وأوفا ، وروستوف ، وكازان. </span>يمكننا مساعدتك في العثور على الخيار المثالي للمدينة والجامعة التي ترغب في الدراسة فيها. دعنا نجعل أحلامك الدراسية في الخارج تتحقق! 🎓</p>
                     </div>
