@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /Apply
+
+
+Sitemap: https://toru.netlify.app/sitemap.xml
