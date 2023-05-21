@@ -1,12 +1,7 @@
 import { useMyContext } from "../../State/MyContext";
 
-import whatsappIcon from "../../assets/imgHome/whatsappIcon.png";
-// import telegramIcon from "../../assets/imgHome/telegramIcon.png";
-import emailIcon from "../../assets/imgHome/emailIcon.png";
-// import InstagramIcon from "../../assets/imgHome/InstagramIcon.png";
-
-
-
+import whatsappIcon from "../../assets/imgHome/whatsappIcon.webp";
+import emailIcon from "../../assets/imgHome/emailIcon.webp";
 
 const ContactUs = () => {
   const { state } = useMyContext();
@@ -14,36 +9,27 @@ const ContactUs = () => {
   const Contacts = [
     {
       name: "واتساب",
-      info: "+79526680499",
+      info: "79526680499+",
       icon: whatsappIcon,
-      link: "https://wa.me/+79526680499"
+      link: "https://wa.me/+79526680499",
     },
-    // {
-      //   name: "تيلقرام",
-      //   info: "@hfjksdhfjdsa",
-      //   icon: telegramIcon,
-      // link: "https://wa.me/+79526680499"
-      // },
-      {
-        name: "ايميل",
-        info: "torussiacampany@gmail.com",
-        icon: emailIcon,
-        link: "mailto:torussiacampany@gmail.com"
-      },
-      // {
-        //   name: "انستاقرام",
-        //   info: "@fdsfdsfds",
-        //   icon: InstagramIcon,
-        // link: "https://wa.me/+79526680499"
-    // },
-
+    {
+      name: "ايميل",
+      info: "torussiacampany@gmail.com",
+      icon: emailIcon,
+      link: "mailto:torussiacampany@gmail.com",
+    },
   ];
-
 
   const ContactsHtml: Array<JSX.Element> = Contacts.map(
     ({ name, info, icon, link }, i) => {
       return (
-        <div key={i} className="flex mb-10 cursor-pointer flex-row-reverse self-start mr-5">
+        <a
+          href={link}
+          target="_blank"
+          key={i}
+          className="flex mb-10 cursor-pointer flex-row-reverse self-start mr-5"
+        >
           <div className="mr-2">
             <h1
               className={"font-Cairo  font-bold text-right " + state.fontColor}
@@ -59,9 +45,8 @@ const ContactUs = () => {
             </p>
           </div>
 
-          <a href={link} target="_blank"><img src={icon} className="w-12 h-12 ml-2 " /></a>
-
-        </div>
+          <img src={icon} className="w-12 h-12 ml-2 " />
+        </a>
       );
     }
   );
@@ -102,7 +87,6 @@ const ContactUs = () => {
               هل لديك اي اسئلة أو استفسار؟
             </h1>
           </div>
-
 
           <div className="flex flex-col-reverse md:flex-row justify-center w-full ">
             <div className="flex flex-col md:flex-row-reverse justify-center md:gap-10 items-end mt-12 md:max-w-1/3 flex-wrap">

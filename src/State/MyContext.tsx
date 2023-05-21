@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState } from "react";
 import { MyState } from "./MyState";
 
@@ -13,25 +12,24 @@ interface MyComponentProps {
 
 const MyContext = createContext<MyContextValue>({
   state: {
-    dark: true,
-    fontColor: "text-[#FFFFFF] ",
-    bgColor: "bg-[#161616] ",
-    bgApp: "bg-[#282828] ",
-    shadowColor: "shadow-[#e0e0e0] ",
-    borderColer: "border-[#FFFFFF] "
-
+    dark: false,
+    fontColor: "text-[#214966] ",
+    bgColor: "bg-[#FFFFFF] ",
+    bgApp: "bg-[#ECECEC] ",
+    shadowColor: "shadow-[#3b5d6c] ",
+    borderColer: "border-[#214966] ",
   },
-  setState: () => { },
+  setState: () => {},
 });
 
 export const MyProvider: React.FC<MyComponentProps> = ({ children }) => {
   const [state, setState] = useState<MyState>({
-    dark: true,
-    fontColor: "text-[#FFFFFF] ",
-    bgColor: "bg-[#161616] ",
-    bgApp: "bg-[#282828] ",
-    shadowColor: "shadow-[#e0e0e0] ",
-    borderColer: "border-[#FFFFFF] "
+    dark: false,
+    fontColor: "text-[#214966] ",
+    bgColor: "bg-[#FFFFFF] ",
+    bgApp: "bg-[#ECECEC] ",
+    shadowColor: "shadow-[#3b5d6c] ",
+    borderColer: "border-[#214966] ",
   });
 
   return (
