@@ -81,7 +81,7 @@ const Benefits = () => {
         return (
             <div key={i} className="hidden col-start-6 col-end-6 md:flex flex-col items-center select-none">
                 <div className={"rounded-full w-10 h-10 flex justify-center items-center " + (state.dark ? "bg-[#FFFFFF]" : "bg-[#214966]")} >
-                    <p className="text-center text-[#DE9F67]">{num}</p>
+                    <p className="text-center text-[#DE9F67] font-bold">{num}</p>
                 </div>
                 <TbMinusVertical className="text-[#DE9F67] text-4xl " />
                 <TbMinusVertical className="text-[#DE9F67] text-4xl " />

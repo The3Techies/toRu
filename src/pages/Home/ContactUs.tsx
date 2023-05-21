@@ -1,8 +1,10 @@
 import { useMyContext } from "../../State/MyContext";
+
 import whatsappIcon from "../../assets/imgHome/whatsappIcon.png";
 // import telegramIcon from "../../assets/imgHome/telegramIcon.png";
 import emailIcon from "../../assets/imgHome/emailIcon.png";
 // import InstagramIcon from "../../assets/imgHome/InstagramIcon.png";
+
 
 
 
@@ -56,7 +58,9 @@ const ContactUs = () => {
               {info}
             </p>
           </div>
+
           <a href={link} target="_blank"><img src={icon} className="w-12 h-12 ml-2 " /></a>
+
         </div>
       );
     }
