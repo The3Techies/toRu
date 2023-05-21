@@ -1,8 +1,6 @@
 import { useMyContext } from "../../State/MyContext";
 import whatsappIcon from '../../assets/imgHome/whatsappIcon.webp'
-import telegramIcon from '../../assets/imgHome/telegramIcon.webp'
 import emailIcon from '../../assets/imgHome/emailIcon.webp'
-import InstagramIcon from "../../assets/imgHome/InstagramIcon.webp"
 
 export default function ApplyHero() {
 
@@ -11,41 +9,28 @@ export default function ApplyHero() {
   const Contacts = [
     {
       name: "واتساب",
-      info: "+79526680499",
+      info: "79526680499+",
       icon: whatsappIcon,
       link: "https://wa.me/+79526680499"
     },
-    // {
-    //   name: "تيلقرام",
-    //   info: "@hfjksdhfjdsa",
-    //   icon: telegramIcon,
-    // link: "https://wa.me/+79526680499"
-    // },
     {
       name: "ايميل",
       info: "torussiacampany@gmail.com",
       icon: emailIcon,
       link: "mailto:torussiacampany@gmail.com"
-    },
-    // {
-    //   name: "انستاقرام",
-    //   info: "@fdsfdsfds",
-    //   icon: InstagramIcon,
-    // link: "https://wa.me/+79526680499"
-    // },
-    
+    }
+  ]
   
-  ];
   const ContactsHtml: Array<JSX.Element> = Contacts.map(
     ({ name, info, icon, link }, i) => {
       return (
-        <div key={i} className="flex mb-10 cursor-pointer flex-row-reverse self-start mr-5" >
+        <a key={i} href={link} target="_blank" className="flex mb-10 cursor-pointer flex-row-reverse self-start mr-5" >
           <div>
             <h1 className={'font-Cairo  font-bold text-right ' + state.fontColor}>{name}</h1>
             <p className={'font-Cairo text-right mt-1 select-text ' + state.fontColor}>{info}</p>
           </div>
-          <a href={link} target="_blank"><img src={icon} className="w-12 h-12 ml-4" /></a>
-        </div>
+          <img src={icon} className="w-12 h-12 ml-4" />
+        </a>
       )
     })
 
