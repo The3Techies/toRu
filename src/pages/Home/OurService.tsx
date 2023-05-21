@@ -51,7 +51,7 @@ const OurService = () => {
                         <h1 className={'font-Cairo md:text-2xl font-black text-center ' + state.fontColor}>مقابل <span className="text-blue-600">500$</span> فقط</h1>
 
                     </div>
-                    <div className='flex md:flex-row-reverse flex-col mt-10 justify-around  ' >
+                    <div className='flex md:flex-row flex-col mt-10 justify-around  ' >
                         {WhyUS}
                     </div>
                 </div>

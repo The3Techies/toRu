@@ -43,7 +43,7 @@ const WhyUs = () => {
                     </div>
                     <h1 className={'font-Cairo md:text-2xl font-extrabold ' + state.fontColor}>حسنا, سوف نجيب على بعض الأسئلة</h1>
                 </div>
-                <div className='flex md:flex-row-reverse flex-col mt-10 justify-around items-center ' >
+                <div className='flex md:flex-row flex-col mt-10 justify-around items-center ' >
                     {WhyUs}
                 </div>
             </div>
